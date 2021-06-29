@@ -1,12 +1,12 @@
 {{#if isSecondary}}
 <!-- secondary navigation -->
-<ul class="nav">
+<ul class="nav-list">
     {{#foreach navigation}}
-    <li class="nav-{{slug}}">
-        <a href="{{url}}" class="social-link">
-            <svg width="16" height="16" role="img" aria-label="{{slug}} icon">
-                <use xlink:href="#{{slug}}"></use>
-            </svg>
+    <li class="menu-item menu-item-{{slug}}{{#if current}} menu-item-current{{/if}}"">
+        <a class=" menu-item-link" href="{{url}}">
+        <svg width="20" height="20" role="img" aria-label="{{slug}} icon">
+            <use xlink:href="#{{slug}}"></use>
+        </svg>
         </a>
     </li>
     {{/foreach}}
@@ -14,8 +14,10 @@
 {{else}}
 <ul class="nav-list u-plain-list">
     {{#foreach navigation}}
-    <li class="menu-item menu-item-{{slug}}{{#if current}} menu-item-current{{/if}}"><a class="menu-item-link"
-            href="{{url absolute=" true"}}">{{label}}</a></li>
+    <li class="menu-item menu-item-{{slug}}{{#if current}} menu-item-current{{/if}}">
+        <a class="menu-item-link" href="{{url absolute=" true"}}">{{label}}
+        </a>
+    </li>
     {{/foreach}}
 </ul>
 {{/if}}
