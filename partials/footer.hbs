@@ -1,13 +1,10 @@
 <footer class="site-footer container large">
     {{> logo}}
 
+    {{#if @site.secondary_navigation}}
+    {{navigation type="secondary"}}
+    {{else}}
     <div class="footer-social">
-        {{#if @site.facebook}}
-            <a class="footer-social-item footer-social-item-facebook" href="{{facebook_url @site.facebook}}"
-                target="_blank" rel="noopener" aria-label="Facebook">
-                <i class="icon icon-facebook"></i>
-            </a>
-        {{/if}}
         {{#if @site.twitter}}
             <a class="footer-social-item footer-social-item-twitter" href="{{twitter_url @site.twitter}}"
                 target="_blank" rel="noopener" aria-label="Twitter">
@@ -20,4 +17,5 @@
             <i class="icon icon-rss"></i>
         </a>
     </div>
+    {{/if}}
 </footer>
