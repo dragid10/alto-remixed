@@ -1,6 +1,23 @@
+{{#if isSecondary}}
+<!-- secondary navigation -->
 <ul class="nav-list u-plain-list">
     {{#foreach navigation}}
-        <li class="menu-item menu-item-{{slug}}{{#if current}} menu-item-current{{/if}}"><a class="menu-item-link"
-                href="{{url absolute="true"}}">{{label}}</a></li>
+    <li class="menu-item menu-item-{{slug}}{{#if current}} menu-item-current{{/if}}"">
+        <a class=" menu-item-link" href="{{url}}">
+        <svg width="45" height="45" role="img" aria-label="{{slug}} icon">
+            <use xlink:href="#{{slug}}"></use>
+        </svg>
+        </a>
+    </li>
     {{/foreach}}
 </ul>
+{{else}}
+<ul class="nav-list u-plain-list">
+    {{#foreach navigation}}
+    <li class="menu-item menu-item-{{slug}}{{#if current}} menu-item-current{{/if}}">
+        <a class="menu-item-link" href="{{url absolute=" true"}}">{{label}}
+        </a>
+    </li>
+    {{/foreach}}
+</ul>
+{{/if}}

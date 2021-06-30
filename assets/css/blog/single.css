@@ -2,6 +2,23 @@
     margin-bottom: 60px;
 }
 
+.single-post-homepage {
+    margin-bottom: 60px;
+    text-align: center;
+}
+.name-pronounciation {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#name-pronounciation {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
 .single-post .post-header {
     text-align: center;
 }

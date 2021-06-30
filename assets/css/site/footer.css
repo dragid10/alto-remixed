@@ -1,7 +1,7 @@
 .site-footer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     padding-top: 45px;
     padding-bottom: 45px;
     line-height: 1;
