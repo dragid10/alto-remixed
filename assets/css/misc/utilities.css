@@ -92,7 +92,7 @@
 .u-text-format h4,
 .u-text-format h5,
 .u-text-format h6 {
-    margin-top: 40px;
+    margin-top: 35px;
     font-weight: 800;
 }
 
@@ -105,30 +105,31 @@
     margin-top: 15px;
 }
 
+/* CHANGE FONT SIZES BELOW FOR ALTO THEME */
 .u-text-format h1 {
-    font-size: 26px;
+    font-size: 30px;
 }
 
 .u-text-format h2 {
-    font-size: 23px;
+    font-size: 28px;
 }
 
 .u-text-format h3 {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .u-text-format h4 {
-    font-size: 17px;
+    font-size: 21px;
     font-weight: 700;
 }
 
 .u-text-format h5 {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 .u-text-format h6 {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
 }
